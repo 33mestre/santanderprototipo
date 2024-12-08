@@ -21,16 +21,16 @@ node index.js
 
 ## Equipe de Trabalho
 
-- Tiago Machado
-- Roberto de Melo
-- Wilson Ferreira Jr
-- Haydee Filadelpho
-- Daiana de Oliveira
-- Daniel Anolue
-- Elton Nascimento
-- Felipe Simone
-- Gabriel de Oliveira
-- Guilherme de Almeida
-- Paulo Rossi
-- Shelson Ferrari
-- William Lisboa
+- Tiago Machado - Gerente de Projeto
+- Roberto de Melo - Squad Leader
+- Wilson Ferreira Jr - Tech Leader
+- Haydee Filadelpho - Project Owner
+- Daiana de Oliveira - Design Especialista
+- Daniel Anolue - DEV Especialista
+- Elton Nascimento - DEV Especialista
+- Felipe Simone - DEV Especialista
+- Gabriel de Oliveira - FrontEnd Especialista
+- Guilherme de Almeida - DEV Especialista
+- Paulo Rossi - DEV Especialista
+- Shelson Ferrari - DEV Especialista
+- William Lisboa - DEV Especialista
