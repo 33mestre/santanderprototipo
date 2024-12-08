@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Santander</title>
-	
 	<link href="fonts/dystopian.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon"
-	href="/favicon.png">
-
-
+	<link rel="icon" type="image/x-icon" href="/favicon.png">
 	<style>
 		body {
-		  margin: 0;
-		  background-color: #fe0002;
-		  height: 100vh;
-		  overflow: hidden;
+			margin: 0;
+			background-color: #fe0002;
+			height: 100vh;
+			overflow: hidden;
 		}
-	
-		video {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  object-fit: cover;
-		}
-	
-		.overlay {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  background-color: #DCDCDC;
-		  color: #000;
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  font-size: 2rem;
-		  opacity: 0;
-		  pointer-events: none;
-		}
-	  </style>
 
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #DCDCDC;
+			color: #000;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 2rem;
+			opacity: 0;
+			pointer-events: none;
+		}
+	</style>
 	<link rel="stylesheet" type="text/css" href="css/splitting.css" />
 	<link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
 	<link rel="stylesheet" type="text/css" href="css/prototipoContatos.css" />
@@ -53,48 +49,40 @@
 	<script src="js/vitplay/dolar.js"></script>
 	<script src="js/vitplay/element.js"></script>
 	<script type="text/javascript" src="/js/dxicons.js"></script>
- <script src="/js/gsap_parte1.js"></script>
- <script src="/js/MorphSVGPlugin.js"></script>
- <script src="/js/Draggable3Vitplay.js"></script> 
- <script src="/js/InertiaPlugin.min.js"></script>
- <script src="/js/dxicons3.js"></script>
- <!-- <script src="/js/dxicons_super.js"></script> -->
- <script src="/js/splitting.js"></script>
- <script src='js/AnticipateEase.min.js'></script>
- <!-- <script src='js/splitting.js'></script> -->
+	<script src="/js/gsap_parte1.js"></script>
+	<script src="/js/MorphSVGPlugin.js"></script>
+	<script src="/js/Draggable3Vitplay.js"></script>
+	<script src="/js/InertiaPlugin.min.js"></script>
+	<script src="/js/dxicons3.js"></script>
+	<script src="/js/splitting.js"></script>
+	<script src='js/AnticipateEase.min.js'></script>
 	<script src="js/prototipoContatos.js" type="module"></script>
 
 	<script>
 		function enterFullscreen() {
-		  const element = document.documentElement;
-		  if (element.requestFullscreen) {
-			element.requestFullscreen();
-		  } else if (element.mozRequestFullScreen) {
-			element.mozRequestFullScreen();
-		  } else if (element.webkitRequestFullscreen) {
-			element.webkitRequestFullscreen();
-		  } else if (element.msRequestFullscreen) {
-			element.msRequestFullscreen();
-		  }
+			const element = document.documentElement;
+			if (element.requestFullscreen) {
+				element.requestFullscreen();
+			} else if (element.mozRequestFullScreen) {
+				element.mozRequestFullScreen();
+			} else if (element.webkitRequestFullscreen) {
+				element.webkitRequestFullscreen();
+			} else if (element.msRequestFullscreen) {
+				element.msRequestFullscreen();
+			}
 		}
-	  </script>
+	</script>
 
 </head>
-<body>
 
+<body>
 
 	<video onclick="enterFullscreen()" id="video" autoplay muted poster="video/poster.jpg">
 		<source src="video/santander2.mp4" type="video/mp4">
 		Your browser does not support the video tag.
-	  </video>
-	  <div class="overlay" id="overlay">
-		
-		
-	
-	
-	  </div>
-	
-	  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> -->
+	</video>
+	<div class="overlay" id="overlay">
+	</div>
 
 	<main style="visibility: hidden;">
 		<div class="contentContatos">
@@ -103,31 +91,51 @@
 				<span class="content__title-line content__title-line--2" data-splitting>07</span>
 			</h2>
 			<div class="gridContatos">
-				<a href="#preview-1" class="grid__item pos-1" data-title="Daiana de Oliveira"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/generic.jpg);"></div></a>
-				<a href="#preview-2" class="grid__item pos-2" data-title="Daniel Anolue"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/2.jpg);"></div></a>
-				<a href="#preview-3" class="grid__item pos-3" data-title="Elton Nascimento"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/3.jpg);"></div></a>
-				<a href="#preview-4" class="grid__item pos-4" data-title="Felipe Simone"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/4.jpg);"></div></a>
-				<a href="#preview-5" class="grid__item pos-5" data-title="Gabriel de Oliveira"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/5.jpg);"></div></a>
-				<a href="#preview-6" class="grid__item pos-6" data-title="Guilherme de Almeida"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/6.jpg);"></div></a>
-				<a href="#preview-7" class="grid__item pos-7" data-title="Paulo Rossi"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/7.jpg);"></div></a>
-				<a href="#preview-8" class="grid__item pos-8" data-title="Shelson Ferrari"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/8.jpg);"></div></a>
-				<a href="#preview-9" class="grid__item pos-9" data-title="William Lisboa"><div class="grid__item-img" style="background-image:url(/img/prototipoContatos/9.jpg);"></div></a>
+				<a href="#preview-1" class="grid__item pos-1" data-title="Daiana de Oliveira">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/generic.jpg);"></div>
+				</a>
+				<a href="#preview-2" class="grid__item pos-2" data-title="Daniel Anolue">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/2.jpg);"></div>
+				</a>
+				<a href="#preview-3" class="grid__item pos-3" data-title="Elton Nascimento">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/3.jpg);"></div>
+				</a>
+				<a href="#preview-4" class="grid__item pos-4" data-title="Felipe Simone">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/4.jpg);"></div>
+				</a>
+				<a href="#preview-5" class="grid__item pos-5" data-title="Gabriel de Oliveira">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/5.jpg);"></div>
+				</a>
+				<a href="#preview-6" class="grid__item pos-6" data-title="Guilherme de Almeida">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/6.jpg);"></div>
+				</a>
+				<a href="#preview-7" class="grid__item pos-7" data-title="Paulo Rossi">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/7.jpg);"></div>
+				</a>
+				<a href="#preview-8" class="grid__item pos-8" data-title="Shelson Ferrari">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/8.jpg);"></div>
+				</a>
+				<a href="#preview-9" class="grid__item pos-9" data-title="William Lisboa">
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/9.jpg);"></div>
+				</a>
 			</div>
 			<div class="preview">
 				<div class="preview__item" id="preview-1">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/generic.jpg);"></div>
+						<div class="preview__item-img"
+							style="background-image:url(/img/prototipoContatosFull/generic.jpg);"></div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Daiana</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -137,17 +145,19 @@
 				<div class="preview__item" id="preview-2">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/2.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/2.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Daniel</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration Devteam</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration Devteam</span>
+						</div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t85024@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t85024@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -157,17 +167,19 @@
 				<div class="preview__item" id="preview-3">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/3.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/3.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Elton</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Design Auth Phase 1 - Customer</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Design Auth Phase 1 -
+								Customer</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>elton.nascimento@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>elton.nascimento@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -177,17 +189,18 @@
 				<div class="preview__item" id="preview-4">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/4.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/4.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Felipe</h2>
 					<div class="preview__item-content">
 						<div class="preview__item-meta"><span>Serviços de Tecnologia</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>felipe.simone@prservicos.com.br</li>
-								<li><strong>Company: </strong>GFT Brasil Consultoria.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>felipe.simone@prservicos.com.br</li>
+							<li><strong>Company: </strong>GFT Brasil Consultoria.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -197,17 +210,18 @@
 				<div class="preview__item" id="preview-5">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/5.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/5.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Gabriel</h2>
 					<div class="preview__item-content">
 						<div class="preview__item-meta"><span>CWR - Serviços de Tecnologia</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>gabriel.oliveira@prservicos.com.br</li>
-								<li><strong>Company: </strong>IBM</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>gabriel.oliveira@prservicos.com.br</li>
+							<li><strong>Company: </strong>IBM</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -217,17 +231,19 @@
 				<div class="preview__item" id="preview-6">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/6.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/6.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Guilherme</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration Decteam</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration Decteam</span>
+						</div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>guilherme.almeida@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>guilherme.almeida@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -237,17 +253,18 @@
 				<div class="preview__item" id="preview-7">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/7.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/7.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Paulo</h2>
 					<div class="preview__item-content">
 						<div class="preview__item-meta"><span>Serviços de Tecnologia</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>paulorossi@prservicos.com.br</li>
-								<li><strong>Company: </strong>GFT Brasil Consultoria Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>paulorossi@prservicos.com.br</li>
+							<li><strong>Company: </strong>GFT Brasil Consultoria Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -257,17 +274,19 @@
 				<div class="preview__item" id="preview-8">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/8.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/8.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Shelson</h2>
 					<div class="preview__item-content">
 						<div class="preview__item-meta"><span>Serviços de Tecnologia</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>shelson.ferrari@prservicos.com.br</li>
-								<li><strong>Company: </strong>NTT Data Brasil Consultoria de negócios e tecnologia da informação ltda</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>shelson.ferrari@prservicos.com.br</li>
+							<li><strong>Company: </strong>NTT Data Brasil Consultoria de negócios e tecnologia da
+								informação ltda</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -277,17 +296,19 @@
 				<div class="preview__item" id="preview-9">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/9.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/9.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">William</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration DevTeam</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration DevTeam</span>
+						</div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>william.lisboa@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>william.lisboa@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -297,17 +318,19 @@
 				<div class="preview__item" id="preview-10">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/10.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/10.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">William</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration DevTeam</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Orchestration DevTeam</span>
+						</div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>william.lisboa@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>william.lisboa@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -317,17 +340,19 @@
 				<div class="preview__item" id="preview-11">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/11.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/11.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Atinkers</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -337,17 +362,19 @@
 				<div class="preview__item" id="preview-12">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/12.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/12.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Twinhouse</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -357,17 +384,19 @@
 				<div class="preview__item" id="preview-13">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/13.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/13.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Lonstrian</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -377,17 +406,19 @@
 				<div class="preview__item" id="preview-14">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/14.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/14.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Satinge</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -397,17 +428,19 @@
 				<div class="preview__item" id="preview-15">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/15.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/15.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Vikins</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -417,17 +450,19 @@
 				<div class="preview__item" id="preview-16">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/16.jpg);"></div>
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/16.jpg);">
+						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Choulder V</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document Management&Deplyment</span></div>
+						<div class="preview__item-meta"><span>Especialista</span><span>Document
+								Management&Deplyment</span></div>
 						<p class="preview__item-description">
 
-							<ul style="list-style-type:circle;">
-								<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-								<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-							</ul>
+						<ul style="list-style-type:circle;">
+							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
+							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
+						</ul>
 
 						</p>
 						<button class="preview__item-info unbutton">+ Info</button>
@@ -439,9 +474,10 @@
 	</main>
 	<div class="cursor" style="visibility: hidden;">
 		<svg class="cursor__svg" width="80" height="80" viewBox="0 0 80 80">
-			<circle vector-effect="non-scaling-stroke" class="cursor__svg-circle" cx="40" cy="40" r="20"/>
+			<circle vector-effect="non-scaling-stroke" class="cursor__svg-circle" cx="40" cy="40" r="20" />
 		</svg>
 		<span class="cursor__text"></span>
 	</div>
 </body>
+
 </html>
