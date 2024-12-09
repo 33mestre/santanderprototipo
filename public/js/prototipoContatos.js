@@ -7,11 +7,66 @@ const overlay = document.getElementById('overlay');
 
 
 const start = ()=>{
+
+    // const botao = document.getElementById("botao");
+    // const conteudo = document.getElementById("conteudo");
+    // const fechar = document.getElementById("fechar");
+  
+    // let isExpanded = false;
+  
+    // // Botão click para expandir
+    // botao.addEventListener("click", function () {
+    //   if (!isExpanded) {
+    //     isExpanded = true;
+  
+    //     // Exibir conteúdo e botão
+    //     // conteudo.style.display = "flex";
+  
+    //     // Animação de expansão
+    //     gsap.to(botao, {
+    //       duration: 1,
+    //     //   width: window.innerWidth,
+    //     //   height: window.innerHeight,
+    //     width: '800px',
+    //     height: '400px',
+    //       position: 'fixed',
+    //       ease: "power2.inOut",
+    //       onComplete: () => {
+    //         fechar.style.display = "block";
+    //         botao.classList.add('max');
+    //       },
+    //     });
+    //   }
+    // });
+  
+    // // Botão de fechar com clique
+    // fechar.addEventListener("click", function () {
+    //   fechar.style.display = "none";
+  
+    //   // Reversão da animação para voltar ao tamanho original
+    //   gsap.to(botao, {
+    //     duration: 1,
+    //     width: 200,
+    //     height: 50,
+    //     position: 'absolute',
+    //     ease: "power2.inOut",
+    //     onComplete: () => {
+    //     //   conteudo.style.display = "none";
+    //       isExpanded = false;
+
+    //       botao.classList.remove('max');
+    //     },
+    //   });
+    // });
+
+
     const mainComponent = document.querySelector('main');
     const cursorComponent = document.querySelector('.cursor');
+    const frame = document.querySelector(".frame");
 
     mainComponent.style.visibility = 'visible';
     cursorComponent.style.visibility = 'visible';
+    frame.style.visibility = 'visible';
 
     const cursor = new Cursor(cursorComponent);
 document.body.classList.remove('loading');

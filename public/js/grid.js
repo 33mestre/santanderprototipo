@@ -98,6 +98,9 @@ export class Grid /*extends EventEmitter*/ {
       return false;
     }
     this.isContentOpen = true;
+
+    this.isExpanded = false;
+
     // pointer events
     this.DOM.el.classList.add('grid--inactive');
     // stop the rAF on every item
@@ -169,13 +172,85 @@ export class Grid /*extends EventEmitter*/ {
         y: '0%',
         opacity: 1
       }, 'start+=1.5');
+
+
+      const botao = item.preview.DOM.el.querySelector(".botao");
+      const conteudo = item.preview.DOM.el.querySelector(".conteudo");
+      const fechar = item.preview.DOM.el.querySelector(".fechar");
+    
+      const botaoClick = ()=>{
+        if (!botao.classList.contains('max')) {
+          this.isExpanded = true;
+          gsap.to(botao, {
+            duration: 1,
+          width: '600px',
+          height: '400px',
+            position: 'fixed',
+            ease: "power2.inOut",
+            onComplete: () => {
+              fechar.style.display = "block";
+              botao.classList.add('max');
+            },
+          });
+
+        }
+
+      }
+    
+      // Botão click para expandir
+      if(!fechar.classList.contains('botaoClick')) botao.addEventListener("click", function () {
+        fechar.classList.add('botaoClick');
+        botaoClick();  
+      });
+    
+      // Botão de fechar com clique
+      if(!fechar.classList.contains('fecharClick')) fechar.addEventListener("click", function () {
+        fechar.classList.add('fecharClick');
+        fechar.style.display = "none";
+    
+        // Reversão da animação para voltar ao tamanho original
+        gsap.to(botao, {
+          duration: 1,
+          width: 200,
+          height: 50,
+          position: 'absolute',
+          ease: "power2.inOut",
+          onComplete: () => {
+          //   conteudo.style.display = "none";
+          this.isExpanded = false;
+  
+            botao.classList.remove('max');
+
+          },
+        });
+      });
   }
   hideContent(item) {
     if (!this.isContentOpen) {
       return false;
     }
     this.isContentOpen = false;
-    gsap
+
+    const botao = item.preview.DOM.el.querySelector(".botao");
+
+    const timeoutToClose = botao.classList.contains('max') ? 600:0;
+
+    if(botao.classList.contains('max')){
+
+      const eventClick = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window,
+      });
+      
+
+      // Desencadeando o evento no elemento
+      item.preview.DOM.el.querySelector(".fechar").dispatchEvent(eventClick);
+
+    }
+
+    setTimeout(() => {
+      gsap
       .timeline({
         onComplete: () => {
           item.preview.DOM.el.classList.remove('preview__item--open');
@@ -237,5 +312,8 @@ export class Grid /*extends EventEmitter*/ {
         scale: 1,
         stagger: { amount: 0.2, grid: 'auto', from: 'center' }
       }, 'start+=1')
+    }, timeoutToClose);
+
+
   }
 }

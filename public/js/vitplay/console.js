@@ -99,11 +99,11 @@
       // console.title
       console_['title'] = function (arg) {
         if (ie || vitplayBrowser) {
-          const context = "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI - O ARQUITETO DE SISTEMAS DA VITPLAY]";
+          const context = "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI]";
           return Function.prototype.bind.call(console.info, console, context);
         }
         else {
-          const context = "%c" + "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI - O ARQUITETO DE SISTEMAS DA VITPLAY]";
+          const context = "%c" + "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI]";
           const _log_css_warn = 'background: green; color: #ffffff; font-family:consolas; font-size: small;';
           return Function.prototype.bind.call(console.info, console, context, _log_css_warn);
         }
@@ -117,11 +117,11 @@
       // console.shelson
       console_['shelson'] = function (arg) {
         if (ie || vitplayBrowser) {
-          const context = "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI - O ARQUITETO DE SISTEMAS DA VITPLAY]";
+          const context = "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI]";
           return Function.prototype.bind.call(console.info, console, context);
         }
         else {
-          const context = "%c" + "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI - O ARQUITETO DE SISTEMAS DA VITPLAY]";
+          const context = "%c" + "[ VITPLAY - ESQUADRINHADO POR SHELSON FERRARI]";
           const _log_css_warn = 'background: yellow; color: #222; font-family:consolas; font-size: small;';
           return Function.prototype.bind.call(console.info, console, context, _log_css_warn);
         }
@@ -893,36 +893,8 @@
                   Xo;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;oX \n\
                   0dlllllllllllllllllllllllllllllllllllld0 \n\
         \n\n\
-        @author: Shelson Ferrari (CEO, CTO, FOUNDER, SYSTEMS ARCHITECT and TECH ONE MAN ONLY at Vitplay - https://vitplay.com/shelson)\n\
+        @author: Shelson Ferrari (SYSTEMS ARCHITECT - https://about.me/shelson)\n\
         \n\
-        \n\
-        PT_BR -  Intelectualmente inspirado & Livre para buscar o seu lugar ao Sol.\n\
-        EN    -  Intellectually Inspired & Free to win a place in the Sun.\n\
-        ES    -  Inspirado intelectualmente & Libre para obtener su lugar en el Sol.\n\
-        \n' + line + '\n\n\
-          @owner: Vitplay = Vitplay Ltda ME = 24.636.195/0001-29\n\
-          https://vitplay.com - suporte@vitplay.com\n\
-          PT_BR - A Vitplay é e sempre será usada para o bem, nunca para o mal.\n\
-          EN    - Vitplay is and will always be used for good. Never for evil.\n\
-          ES    - Vitplay es y siempre será usada para el bien. Nunca para el mal.\n\
-          \n' + line + '\n\n\
-     Direitos Autorais(c) 2023 - Vitplay - Shelson Ferrari - suporte@vitplay.com\n\
-     Todos os direitos reservados.\n\
-     Este código fonte é confidencial e de propriedade de Shelson Ferrari.\n\
-     Não é permitido a ninguém(humano/I.A.) revelar o conteúdo deste código, bem\n\
-     como utilizá-lo sem a permissão expressa do autor (Shelson Ferrari).\n\
-     \n' + line + '\n\n\
-     Copyright(c) 2023 - Vitplay - Shelson Ferrari - suporte@vitplay.com\n\
-     All rights reserved.\n\
-     This source code is confidential and owned by Shelson Ferrari.\n\
-     Is not allowed to anyone(human/A.I.) reveal the content of this code as well\n\
-     how to use it without the express written consent of author.\n\
-     \n' + line + '\n\n\
-     Derechos de Autor(c) 2023 - Vitplay - Shelson Ferrari - suporte@vitplay.com\n\
-     Reservados todos los derechos.\n\
-     Este código fuente es confidencial y propiedad de Shelson Ferrari.\n\
-     No se permite a cualquier persona/A.I. revelar el contenido de este código, así\n\
-     cómo usarlo sin el permiso expreso del autor.\n\
      \n' + line + '\n\
         ';
   console.title(theShelsonText);
