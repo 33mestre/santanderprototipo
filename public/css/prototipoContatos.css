@@ -25,7 +25,7 @@ body {
 	--color-title: #d3d3d3;
 	--color-bg: #DCDCDC;
 	--color-link: #c00;
-	--color-link-hover: #000;
+	--color-link-hover: #fff;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	--cursor-stroke: #c00;
@@ -47,6 +47,12 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	color: var(--color-link-hover);
+	outline: none;
+}
+.frame__links a:hover,
+.frame__links a:focus {
+	text-decoration: none;
+	color: #000;
 	outline: none;
 }
 

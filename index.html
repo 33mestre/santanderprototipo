@@ -17,6 +17,15 @@
 			user-select: none;
 		}
 
+		.tasks{
+			position: relative;
+			margin-top: 20px;
+		}
+
+		.tasks:not(.show){
+			display: none;
+		}
+
 		body {
 			margin: 0;
 			background-color: #fe0002;
@@ -141,7 +150,7 @@
 	<div class="frame" style="visibility: hidden;">
 		<div class="frame__title-wrap">
 			<img src="img/santander.jpg" style="width:50px;height:50px;margin-right: 10px;">
-			<h1 class="frame__title">Process Pass / COE-BR / Sprint 07</h1>
+			<h1 class="frame__title">Process Pass / COE-BR / Sprint 07 / DEV Team</h1>
 		</div>
 		<div class="frame__links">
 			<a href="#">GITHUB Project</a>
@@ -167,31 +176,31 @@
 			</h2>
 			<div class="gridContatos">
 				<a href="#preview-1" class="grid__item pos-1" data-title="Daiana de Oliveira">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/generic.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/do.jpg);"></div>
 				</a>
 				<a href="#preview-2" class="grid__item pos-2" data-title="Daniel Anolue">
 					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/2.jpg);"></div>
 				</a>
 				<a href="#preview-3" class="grid__item pos-3" data-title="Elton Nascimento">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/3.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/en.jpg);"></div>
 				</a>
 				<a href="#preview-4" class="grid__item pos-4" data-title="Felipe Simone">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/4.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/fs.jpg);"></div>
 				</a>
 				<a href="#preview-5" class="grid__item pos-5" data-title="Gabriel de Oliveira">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/5.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/go.jpg);"></div>
 				</a>
 				<a href="#preview-6" class="grid__item pos-6" data-title="Guilherme de Almeida">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/6.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/ga.jpg);"></div>
 				</a>
 				<a href="#preview-7" class="grid__item pos-7" data-title="Paulo Rossi">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/7.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/pr.jpg);"></div>
 				</a>
 				<a href="#preview-8" class="grid__item pos-8" data-title="Shelson Ferrari">
 					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/8.jpg);"></div>
 				</a>
 				<a href="#preview-9" class="grid__item pos-9" data-title="William Lisboa">
-					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/9.jpg);"></div>
+					<div class="grid__item-img" style="background-image:url(/img/prototipoContatos/wl.jpg);"></div>
 				</a>
 			</div>
 			<div class="preview">
@@ -199,7 +208,7 @@
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
 						<div class="preview__item-img"
-							style="background-image:url(/img/prototipoContatosFull/generic.jpg);"></div>
+							style="background-image:url(/img/prototipoContatosFull/da.jpg);"></div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Daiana</h2>
 					<div class="preview__item-content">
@@ -214,7 +223,15 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						 <div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 
 					</div>
@@ -238,14 +255,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-3">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/3.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/en.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Elton</h2>
@@ -261,14 +286,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-4">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/4.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/fs.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Felipe</h2>
@@ -283,14 +316,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-5">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/5.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/go.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Gabriel</h2>
@@ -305,14 +346,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-6">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/6.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/ga.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Guilherme</h2>
@@ -328,14 +377,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-7">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/7.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/pr.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">Paulo</h2>
@@ -350,7 +407,15 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
@@ -362,7 +427,7 @@
 					</div>
 					<h2 data-splitting class="preview__item-title">Shelson</h2>
 					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Serviços de Tecnologia</span></div>
+						<div class="preview__item-meta"><span>Technology Specialist Engineer</span></div>
 						<p class="preview__item-description">
 
 						<ul style="list-style-type:circle;">
@@ -373,14 +438,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-9">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/9.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/wl.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">William</h2>
@@ -396,14 +469,22 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
 				<div class="preview__item" id="preview-10">
 					<button class="preview__item-back unbutton"><span>Back</span></button>
 					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/10.jpg);">
+						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/wl.jpg);">
 						</div>
 					</div>
 					<h2 data-splitting class="preview__item-title">William</h2>
@@ -419,148 +500,19 @@
 
 						</p>
 						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
+						<div class="preview__item-button botao">Activities
+							<div class="tasks">
+								<ul style="list-style-type:circle;">
+									<li>
+										<a href="/presentation" target="_blank">Task 1</a>
+									</li>
+								</ul>
+							</div>
+						 </div>
 						<button class="fechar">X</button>
 					</div>
 				</div>
-				<div class="preview__item" id="preview-11">
-					<button class="preview__item-back unbutton"><span>Back</span></button>
-					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/11.jpg);">
-						</div>
-					</div>
-					<h2 data-splitting class="preview__item-title">Atinkers</h2>
-					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document
-								Management&Deplyment</span></div>
-						<p class="preview__item-description">
-
-						<ul style="list-style-type:circle;">
-							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-						</ul>
-
-						</p>
-						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
-						<button class="fechar">X</button>
-					</div>
-				</div>
-				<div class="preview__item" id="preview-12">
-					<button class="preview__item-back unbutton"><span>Back</span></button>
-					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/12.jpg);">
-						</div>
-					</div>
-					<h2 data-splitting class="preview__item-title">Twinhouse</h2>
-					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document
-								Management&Deplyment</span></div>
-						<p class="preview__item-description">
-
-						<ul style="list-style-type:circle;">
-							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-						</ul>
-
-						</p>
-						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
-						<button class="fechar">X</button>
-					</div>
-				</div>
-				<div class="preview__item" id="preview-13">
-					<button class="preview__item-back unbutton"><span>Back</span></button>
-					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/13.jpg);">
-						</div>
-					</div>
-					<h2 data-splitting class="preview__item-title">Lonstrian</h2>
-					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document
-								Management&Deplyment</span></div>
-						<p class="preview__item-description">
-
-						<ul style="list-style-type:circle;">
-							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-						</ul>
-
-						</p>
-						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
-						<button class="fechar">X</button>
-					</div>
-				</div>
-				<div class="preview__item" id="preview-14">
-					<button class="preview__item-back unbutton"><span>Back</span></button>
-					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/14.jpg);">
-						</div>
-					</div>
-					<h2 data-splitting class="preview__item-title">Satinge</h2>
-					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document
-								Management&Deplyment</span></div>
-						<p class="preview__item-description">
-
-						<ul style="list-style-type:circle;">
-							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-						</ul>
-
-						</p>
-						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
-						<button class="fechar">X</button>
-					</div>
-				</div>
-				<div class="preview__item" id="preview-15">
-					<button class="preview__item-back unbutton"><span>Back</span></button>
-					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/15.jpg);">
-						</div>
-					</div>
-					<h2 data-splitting class="preview__item-title">Vikins</h2>
-					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document
-								Management&Deplyment</span></div>
-						<p class="preview__item-description">
-
-						<ul style="list-style-type:circle;">
-							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-						</ul>
-
-						</p>
-						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
-						<button class="fechar">X</button>
-					</div>
-				</div>
-				<div class="preview__item" id="preview-16">
-					<button class="preview__item-back unbutton"><span>Back</span></button>
-					<div class="preview__item-imgwrap">
-						<div class="preview__item-img" style="background-image:url(/img/prototipoContatosFull/16.jpg);">
-						</div>
-					</div>
-					<h2 data-splitting class="preview__item-title">Choulder V</h2>
-					<div class="preview__item-content">
-						<div class="preview__item-meta"><span>Especialista</span><span>Document
-								Management&Deplyment</span></div>
-						<p class="preview__item-description">
-
-						<ul style="list-style-type:circle;">
-							<li><strong>Email: </strong>t775151@f1rst.com.br</li>
-							<li><strong>Company: </strong>F1rst Tecnologia e Inovação Ltda.</li>
-						</ul>
-
-						</p>
-						<!-- <button class="preview__item-info unbutton">+ Info</button> -->
-						 <div class="preview__item-button botao">Activities</div>
-						<button class="fechar">X</button>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</main>

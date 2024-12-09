@@ -12,6 +12,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
+app.get('/presentation', (req, res) => {
+    res.sendFile(path.join(__dirname, 'presentation.html'));
+});
 
 // Inicia o servidor
 app.listen(PORT, () => {

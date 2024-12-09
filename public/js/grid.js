@@ -177,6 +177,7 @@ export class Grid /*extends EventEmitter*/ {
       const botao = item.preview.DOM.el.querySelector(".botao");
       const conteudo = item.preview.DOM.el.querySelector(".conteudo");
       const fechar = item.preview.DOM.el.querySelector(".fechar");
+      const tasks = botao.querySelector(".tasks");
     
       const botaoClick = ()=>{
         if (!botao.classList.contains('max')) {
@@ -190,6 +191,7 @@ export class Grid /*extends EventEmitter*/ {
             onComplete: () => {
               fechar.style.display = "block";
               botao.classList.add('max');
+              tasks.classList.add('show');
             },
           });
 
@@ -207,6 +209,7 @@ export class Grid /*extends EventEmitter*/ {
       if(!fechar.classList.contains('fecharClick')) fechar.addEventListener("click", function () {
         fechar.classList.add('fecharClick');
         fechar.style.display = "none";
+        tasks.classList.remove('show');
     
         // Reversão da animação para voltar ao tamanho original
         gsap.to(botao, {
@@ -220,7 +223,6 @@ export class Grid /*extends EventEmitter*/ {
           this.isExpanded = false;
   
             botao.classList.remove('max');
-
           },
         });
       });
